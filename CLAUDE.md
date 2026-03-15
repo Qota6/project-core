@@ -51,5 +51,11 @@ docs/                 # 仕様書
 - Native: Expo EAS（無料枠）
 - DB/Auth: Supabase（無料枠）
 
+## project-core 同期ルール
+
+- このプロジェクトで再利用可能なskillsや設定パターンを作成・更新した場合、`project-core` リポジトリ（`/Users/kotaro/Documents/GitHub/project-core`）にも汎用化して反映する
+- プロジェクト固有の記述（ファイル名、プロジェクト名等）は `{{PLACEHOLDER}}` 形式に置き換える
+- 対象: skills、CLAUDE.md、memory-template、設定ファイルテンプレート
+
 # currentDate
 Today's date is {{CURRENT_DATE}}.
