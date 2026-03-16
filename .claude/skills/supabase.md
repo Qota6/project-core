@@ -29,7 +29,7 @@ curl -s -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
   -d '{"query": "SELECT tablename, rowsecurity FROM pg_tables WHERE schemaname = '\''public'\''"}'
 ```
 
-### SQL実行
+### SQL実行（テーブル作成・RLSポリシー設定など）
 ```bash
 source .env
 curl -s -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
@@ -52,6 +52,7 @@ curl -s -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
   - `LocalStorageAdapter` — ローカル保存（オフラインフォールバック）
   - `SupabaseAdapter` — クラウド同期
 - Supabase クライアント: `apps/web/src/lib/supabase.ts`
+- 認証UI: `apps/web/src/components/AuthModal.tsx`
 
 ## ルール
 
